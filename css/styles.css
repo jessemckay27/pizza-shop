@@ -71,6 +71,10 @@ button {
 	border: 1px solid #000;
 }
 
+.btn:hover {
+	color: #fff;
+}
+
 #output-wrap {
 	border: 1px solid #dd2525;
 	margin-top: 20px;
@@ -81,10 +85,6 @@ button {
 #output-wrap h3 {
 	border-bottom: 1px solid #dd2525;
 	color: #dd2525;
-}
-
-h3#top-fix {
-
 }
 
 h3#bottom-fix {

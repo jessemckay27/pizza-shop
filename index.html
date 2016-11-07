@@ -1,58 +1,53 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<script type="text/javascript" src="js/scripts.js"></script>
-	<title>Jesse's Pizza Shop</title>
-</head>
-<body>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
-				<h1>Jesse's Pizza Shop</h1>
-				<form>
-				
-					<div class="checkbox wrap" id="toppings">
-						<h3>Choose Your Toppings:</h3>
-	    			<label><input type="checkbox" name="toppings" value="2">Pepperoni - $2</label>
-	    			<label><input type="checkbox" name="toppings" value="2">Sausage - $2</label>
-	    			<label><input type="checkbox" name="toppings" value="2">Bacon - $2</label>
-		   			<label><input type="checkbox" name="toppings" value="2">Ham - $2</label>
-						<label><input type="checkbox" name="toppings" value="1">Extra Cheese $1</label>
-		    		<label><input type="checkbox" name="toppings" value="1">Pineapple = $1</label>
-						<label><input type="checkbox" name="toppings" value="1">Mushrooms = $1</label>
-						<label><input type="checkbox" name="toppings" value="1">Onions = $1</label>
-						<label><input type="checkbox" name="toppings" value="1">Olives = $1</label>
-						<label><input type="checkbox" name="toppings" value="1">Green Peppers = $1</label>
-		    	</div>
-	
-					<div class="checkbox wrap" id="sides">
-						<h3>Choose Your Sides:</h3>
-						<div id="food">
-							<label><input type="checkbox" name="sides" value="3">Breadsticks - $3</label>
-							<label><input type="checkbox" name="sides" value="6">Chicken Wings - $6</label>
-							<label><input type="checkbox" name="sides" value="4">Salad - $4</label>
+	<head>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<script type="text/javascript" src="js/scripts.js"></script>
+		<title>Jesse's Pizza Shop</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<h1>Jesse's Pizza Shop</h1>
+					<form>
+						<div class="checkbox wrap" id="toppings">
+							<h3>Choose Your Toppings:</h3>
+		    			<label><input type="checkbox" name="toppings" value="2">Pepperoni - $2</label>
+		    			<label><input type="checkbox" name="toppings" value="2">Sausage - $2</label>
+		    			<label><input type="checkbox" name="toppings" value="2">Bacon - $2</label>
+			   			<label><input type="checkbox" name="toppings" value="2">Ham - $2</label>
+							<label><input type="checkbox" name="toppings" value="1">Extra Cheese $1</label>
+			    		<label><input type="checkbox" name="toppings" value="1">Pineapple - $1</label>
+							<label><input type="checkbox" name="toppings" value="1">Mushrooms - $1</label>
+							<label><input type="checkbox" name="toppings" value="1">Onions - $1</label>
+							<label><input type="checkbox" name="toppings" value="1">Olives - $1</label>
+							<label><input type="checkbox" name="toppings" value="1">Green Peppers = $1</label>
+			    	</div>
+						<div class="checkbox wrap" id="sides">
+							<h3>Choose Your Sides:</h3>
+							<div id="food">
+								<label><input type="checkbox" name="sides" value="3">Breadsticks - $3</label>
+								<label><input type="checkbox" name="sides" value="6">Chicken Wings - $6</label>
+								<label><input type="checkbox" name="sides" value="4">Salad - $4</label>
+							</div>
+							<div id="drinks">
+								<label><input type="checkbox" name="sides" value="2">2 Liter of Coke - $2</label>
+								<label><input type="checkbox" name="sides" value="2">2 Liter of Pepsi - $2</label>
+								<label><input type="checkbox" name="sides" value="2">2 Liter of Sprite - $2</label>
+							</div>
 						</div>
-						<div id="drinks">
-							<label><input type="checkbox" name="sides" value="2">2 Liter of Coke - $2</label>
-							<label><input type="checkbox" name="sides" value="2">2 Liter of Pepsi - $2</label>
-							<label><input type="checkbox" name="sides" value="2">2 Liter of Sprite - $2</label>
-						</div>
+						<button class="btn">Place Order</button>
+					</form>
+					<div id="output-wrap" class="initial-hidden wrap">
+						<h3 id="top-fix">Your order has been placed!</h3>
+						<h3 id="bottom-fix">Total:</h3>
+						<h3 id="price"></h3>
 					</div>
-					<button class="btn">Place Order</button>
-				</form>
-
-
-				<div id="output-wrap" class="initial-hidden wrap">
-					<h3 id="top-fix">Your order has been placed!</h3>
-					<h3 id="bottom-fix">Total:</h3>
-					<h3 id="price"></h3>
 				</div>
-
 			</div>
 		</div>
-	</div>
-</body>
+	</body>
 </html>
