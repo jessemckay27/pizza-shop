@@ -37,6 +37,8 @@ $(document).ready(function(){
 		});
 
 		$("#output-wrap").show();
+		$("#output-wrap span").text(myOrder.getPrice());
+		
 
 	});
 });

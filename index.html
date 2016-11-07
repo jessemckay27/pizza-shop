@@ -14,17 +14,18 @@
 				<h1>Jesse's Pizza Shop</h1>
 				<form>
 					<h3>Build Your Pizza</h3>
+					<p>Pizzas begin at $10, choose additional toppings:</p>
 					<div class="checkbox form-group" id="toppings">
-	    			<label><input type="checkbox" name="toppings" value="2">Pepperoni</label>
-	    			<label><input type="checkbox" name="toppings" value="2">Sausage</label>
-	    			<label><input type="checkbox" name="toppings" value="2">Bacon</label>
-		   			<label><input type="checkbox" name="toppings" value="2">Ham</label>
+	    			<label><input type="checkbox" name="toppings" value="2">Pepperoni - $2</label>
+	    			<label><input type="checkbox" name="toppings" value="2">Sausage - $2</label>
+	    			<label><input type="checkbox" name="toppings" value="2">Bacon - $2</label>
+		   			<label><input type="checkbox" name="toppings" value="2">Ham - $2</label>
 						<label><input type="checkbox" name="toppings" value="1.5">Extra Cheese</label>
-		    		<label><input type="checkbox" name="toppings" value="1">Pineapple</label>
-						<label><input type="checkbox" name="toppings" value="1">Mushrooms</label>
-						<label><input type="checkbox" name="toppings" value="1">Onions</label>
-						<label><input type="checkbox" name="toppings" value="1">Olives</label>
-						<label><input type="checkbox" name="toppings" value="1">Green Peppers</label>
+		    		<label><input type="checkbox" name="toppings" value="1">Pineapple = $1</label>
+						<label><input type="checkbox" name="toppings" value="1">Mushrooms = $1</label>
+						<label><input type="checkbox" name="toppings" value="1">Onions = $1</label>
+						<label><input type="checkbox" name="toppings" value="1">Olives = $1</label>
+						<label><input type="checkbox" name="toppings" value="1">Green Peppers = $1</label>
 		    	</div>
 	
 					<div class="checkbox form-group" id="sides">
@@ -38,9 +39,10 @@
 					<button class="btn btn-default">Place Order</button>
 				</form>
 				<div id="output-wrap" class="initial-hidden">
-					<p>Your order has been placed!</p>
-					<div id="output-toppings"></div>
-					<div id="output-sides"></div>
+					<h4>Your order has been placed!</h4>
+					<p>Total:</p>
+					<span></span>
+					
 				</div>
 			</div>
 		</div>
