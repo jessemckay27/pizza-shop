@@ -1,3 +1,107 @@
+body {
+	background-color: #dbdfd9;
+}
+
+.col-md-10 {
+	background-color: #fff;
+	padding: 0;
+}
+
+.wrap {
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 0px 0px 20px 0px;
+	margin-bottom: 20px;
+}
+
+#toppings {
+	border: 1px solid #3fa9f5;
+}
+
+#toppings h3 {
+	border-bottom: 1px solid #3fa9f5;
+	color: #3fa9f5;
+}
+
+#sides {
+	border: 1px solid #29bc42;
+}
+
+#sides h3 {
+	border-bottom: 1px solid #29bc42;
+	color: #29bc42;
+}
+
+#food {
+	padding-bottom: 10px;
+}
+
+#drinks {
+	border-top: 1px solid #29bc42;
+	padding-top: 10px;
+}
+
+h1 {
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: 2.5em;
+	color: #fff;
+	text-shadow: 1px 1px 3px #888;
+}
+
+h3 {
+	font-size: 1.4em;
+	padding: 10px;
+	margin: 0px 0px 10px;
+}
+
 .initial-hidden {
 	display: none;
+}
+
+label {
+	display: block;
+	padding: 5px;
+	margin-left: 15px;
+}
+
+button {
+	background-color: #dd2525;
+	color: #fff;
+	border: 1px solid #000;
+}
+
+#output-wrap {
+	border: 1px solid #dd2525;
+	margin-top: 20px;
+	padding-bottom: 0px;
+}
+
+
+#output-wrap h3 {
+	border-bottom: 1px solid #dd2525;
+	color: #dd2525;
+}
+
+h3#top-fix {
+
+}
+
+h3#bottom-fix {
+	padding-top: 0px;
+	border: none;
+	border-bottom: none;
+	margin-bottom: 0px;
+	display: inline-block;
+}
+
+h3#price {
+	float: right;
+	color:  #dd2525;
+	font-size: 1.4em;
+	padding: 10px;
+	padding-top: 0;
+	font-weight: bold;
+	margin-bottom: none;
+	border-bottom: none;
 }

@@ -23,22 +23,19 @@ $(document).ready(function(){
 	$("form").submit(function(event){
 		event.preventDefault();
 
+		var myOrder = new Order();
 
-		var myOrder = new Order(inputtedToppings, inputtedSides);
-
-		var inputtedToppings = $("input:checkbox[name=toppings]:checked").each(function() {
+		$("input:checkbox[name=toppings]:checked").each(function() {
 			myOrder.toppingsChoices.push(parseInt($(this).val()));
 			$("#output-toppings").append();
 		});
 
-		var inputtedSides = $("input:checkbox[name=sides]:checked").each(function() {
+		$("input:checkbox[name=sides]:checked").each(function() {
 			myOrder.sidesChoices.push(parseInt($(this).val()));
 			$("#output-sides").append();
 		});
 
-		$("#output-wrap").show();
-		$("#output-wrap span").text(myOrder.getPrice());
-		
-
+		$("#output-wrap").fadeIn(300);
+		$("#price").text("$" + myOrder.getPrice());
 	});
 });

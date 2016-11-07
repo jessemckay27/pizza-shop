@@ -10,17 +10,17 @@
 <body>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-10 col-offset-1">
+			<div class="col-md-8 col-md-offset-2">
 				<h1>Jesse's Pizza Shop</h1>
 				<form>
-					<h3>Build Your Pizza</h3>
-					<p>Pizzas begin at $10, choose additional toppings:</p>
-					<div class="checkbox form-group" id="toppings">
+				
+					<div class="checkbox wrap" id="toppings">
+						<h3>Choose Your Toppings:</h3>
 	    			<label><input type="checkbox" name="toppings" value="2">Pepperoni - $2</label>
 	    			<label><input type="checkbox" name="toppings" value="2">Sausage - $2</label>
 	    			<label><input type="checkbox" name="toppings" value="2">Bacon - $2</label>
 		   			<label><input type="checkbox" name="toppings" value="2">Ham - $2</label>
-						<label><input type="checkbox" name="toppings" value="1.5">Extra Cheese</label>
+						<label><input type="checkbox" name="toppings" value="1">Extra Cheese $1</label>
 		    		<label><input type="checkbox" name="toppings" value="1">Pineapple = $1</label>
 						<label><input type="checkbox" name="toppings" value="1">Mushrooms = $1</label>
 						<label><input type="checkbox" name="toppings" value="1">Onions = $1</label>
@@ -28,22 +28,29 @@
 						<label><input type="checkbox" name="toppings" value="1">Green Peppers = $1</label>
 		    	</div>
 	
-					<div class="checkbox form-group" id="sides">
-						<h3>Choose Your Sides</h3>
-						<label><input type="checkbox" name="sides" value="3">Breadsticks</label>
-						<label><input type="checkbox" name="sides" value="6">Chicken Wings</label>
-						<label><input type="checkbox" name="sides" value="4">Salad</label>
-						<label><input type="checkbox" name="sides" value="2">2 Liter of Coke</label>
-						<label><input type="checkbox" name="sides" value="2">2 Liter of Pepsi</label>
+					<div class="checkbox wrap" id="sides">
+						<h3>Choose Your Sides:</h3>
+						<div id="food">
+							<label><input type="checkbox" name="sides" value="3">Breadsticks - $3</label>
+							<label><input type="checkbox" name="sides" value="6">Chicken Wings - $6</label>
+							<label><input type="checkbox" name="sides" value="4">Salad - $4</label>
+						</div>
+						<div id="drinks">
+							<label><input type="checkbox" name="sides" value="2">2 Liter of Coke - $2</label>
+							<label><input type="checkbox" name="sides" value="2">2 Liter of Pepsi - $2</label>
+							<label><input type="checkbox" name="sides" value="2">2 Liter of Sprite - $2</label>
+						</div>
 					</div>
-					<button class="btn btn-default">Place Order</button>
+					<button class="btn">Place Order</button>
 				</form>
-				<div id="output-wrap" class="initial-hidden">
-					<h4>Your order has been placed!</h4>
-					<p>Total:</p>
-					<span></span>
-					
+
+
+				<div id="output-wrap" class="initial-hidden wrap">
+					<h3 id="top-fix">Your order has been placed!</h3>
+					<h3 id="bottom-fix">Total:</h3>
+					<h3 id="price"></h3>
 				</div>
+
 			</div>
 		</div>
 	</div>
